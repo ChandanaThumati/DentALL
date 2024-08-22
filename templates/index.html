@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DentALL</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+   <!-- custom css file link  -->
+  
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_index.css') }}">
+
+
+   <link rel="icon" href="{{ url_for('static', filename='icon.png') }}"/>
+   
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header fixed-top">
+
+    <div class="container">
+ 
+       <div class="row align-items-center justify-content-between">
+ 
+        <a href="#home" class="logo">Dent<span>ALL.</span></a>
+ 
+        <nav class="nav">
+             <a href="#home">home</a>
+             <a href="#about">about</a>
+             <a href="#services">services</a>
+             <a href="#predict">Predict</a>
+        </nav>
+
+        <a href="#predict" class="link-btn">Predict Your Results</a>
+   
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+
+</div>
+</header>
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="container">
+ 
+       <div class="row min-vh-100 align-items-center">
+          <div class="content text-center text-md-left">
+             <h3>Bringing life to your smile</h3>
+             <p>DentALL Can Help You Get the Smile You've Always Wanted. We offer mini daignosis in our website which can red.</p>
+             <a href="#predict" class="link-btn">Get Your Analysis</a>
+          </div>
+       </div>
+ 
+    </div>
+ 
+ </section>
+ 
+ <!-- home section ends -->
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="container">
+ 
+       <div class="row align-items-center">
+ 
+          <div class="col-md-6 image">
+             <img src="{{ url_for('static', filename='about.jpg') }}" class="w-100 mb-5 mb-md-0" alt="">
+          </div>
+ 
+          <div class="col-md-6 content">
+             <span>about us</span>
+             <h3>Genuine Family Healthcare</h3>
+             <p>DentALL helps you achieve the quintessentially oriented smile you have always craved. Our product gets the job done without making you go through any hassle or discomfort.</p>
+             <a href="#predict" class="link-btn">Get Your Personlised Results</a>
+          </div>
+ 
+       </div>
+ 
+    </div>
+ 
+ </section>
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">our services</h1>
+ 
+    <div class="box-container container">
+ 
+       <div class="box">
+          <img src="{{ url_for('static', filename='td.png') }}" alt="">
+          <h3>Tooth Discoloration</h3>
+       </div>
+ 
+       <div class="box">
+          <img src="{{ url_for('static', filename='c.png') }}" alt="">
+          <h3>Caries</h3>
+       </div>
+ 
+       <div class="box">
+         <img src="{{ url_for('static', filename='g.png') }}" alt="">
+          <h3>Gingivitis</h3>
+       </div>
+ 
+       <div class="box">
+          <img src="{{ url_for('static', filename='u.png') }}" alt="">
+          <h3>Ulcer</h3>
+       </div>
+ 
+       <div class="box">
+          <img src="{{ url_for('static', filename='d.png') }}" alt="">
+          <h3>Disease</h3>
+       </div>
+ 
+       <div class="box">
+          <img src="{{ url_for('static', filename='n.png') }}" alt="">
+          <h3>Healthy</h3>
+       </div>
+ 
+    </div>
+ 
+ </section>
+ 
+ <!-- services section ends -->
+ <!-- More Information section starts  -->
+
+<section class="process">
+
+    <h1 class="heading">More Information</h1>
+ 
+    <div class="box-container container">
+ 
+       <div class="box">
+          
+          <h3>Tooth Discoloration</h3>
+          <p>Tooth discoloration is a common dental problem that affects the appearance of teeth. It occurs when the color of the tooth changes from its natural shade to a darker or yellowish color. There are several reasons why teeth can become discolored:
+         </p>
+         <p>Genetics, Aging,As we age, the enamel on our teeth can become thinner, Poor dental hygiene, Food and drink, Tobacco use, Medications
+            </p>
+       
+       </div>
+ 
+       <div class="box">
+          
+          <h3>Caries</h3>
+          <p>A cavity, also known as tooth decay, is a common dental problem that occurs when the enamel on a tooth is destroyed by acid produced by bacteria in the mouth. Cavities can develop in anyone, but they are more common in children, teenagers, and older adults.</p>
+         
+       </div>
+ 
+       <div class="box">
+          
+          <h3>Gingivitis</h3>
+          <p>Gingivitis is a common gum disease characterized by inflammation of the gums. It is caused by the buildup of plaque on teeth, which is a sticky film of bacteria that forms on teeth and gum lines. When plaque is not removed regularly through brushing and flossing, it can irritate the gums and lead to gingivitis. 
+            </p>
+            
+       </div>
+       <div class="box">
+        
+        <h3>Ulcer</h3>
+        <p>A mouth ulcer, also known as an oral ulcer or canker sore, is a painful, open sore that forms in the mouth. These sores can appear on the inside of the lips, cheeks, gums, tongue, or roof of the mouth, and can be caused by a variety of factors.
+
+     </div>
+     <div class="box">
+        
+        <h3>Disease</h3>
+        <p>If an X-ray of an unhealthy tooth is taken, it is likely that a diagnosis of a dental disease can be made based on the resulting image.</p>
+        
+     </div>
+     <div class="box">
+        
+        <h3>Healthy Teeth Tips</h3>
+        <p>Maintaining healthy teeth is important for overall physical health and wellbeing. Here are some tips to promote healthy teeth:
+         
+        </p>
+     </div>
+ 
+    </div>
+ 
+ </section>
+ 
+ <!-- More Information section ends -->
+
+<!-- Predict section starts  -->
+
+<section class="predict" id="predict">
+
+    <h1 class="heading">Get Your Personlised Results</h1>
+    
+    <form action="/" method="post" enctype="multipart/form-data" >
+        
+       
+        <label for="image-upload">
+            <span><i class="fa fa-cloud-upload"></i> Choose an image of a tooth</span>
+        </label>
+        <span>
+        <input type="file" id="image-upload" name="image" accept="image/*">
+        <div id="image-preview" class="hidden">
+            <img id="preview-image" class="preview-image">
+        </div>
+        <button id="predict-button" type="submit" class="btn btn-primary btn-big"><h2>Predict</h2></button>
+        </span>
+    </form>
+
+       
+ 
+ </section>
+ 
+ <!-- Predict section ends -->
+<div class="footer">
+ &copy; 2023 DentALL
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

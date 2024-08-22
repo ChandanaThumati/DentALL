@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DentALL</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_result.css') }}">
+   <!--<link rel="stylesheet" type="text/css" href="style_result.css">-->
+
+   <link rel="icon" href="{{ url_for('static', filename='icon.png') }}"/>
+   <script>const label = "{{ label }}";</script>
+   
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header fixed-top">
+
+    <div class="container">
+ 
+       <div class="row align-items-center justify-content-between">
+ 
+        <a href="#home" class="logo">dent<span>ALL.</span></a>
+ 
+        <nav class="nav">
+             <a href="#home">Results</a>
+             <a href="#information">Information</a>
+             
+        </nav>
+
+   
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+
+</div>
+</header>
+<!-- header section ends -->
+
+<!-- home section starts -->
+<section class="home" id="home">
+    <div class="container">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-md-8">
+                <div class="result-box text-center">
+                    <h1>Result</h1>
+                    <h2>The image shows: <strong>{{ label }}</strong></h2>
+                    <h2>Score: <strong>{{ score }}</strong></h2>
+                    <img src="{{ image_url }}" alt="Result Image">
+                <div>
+                    <hr width="50%" />
+                    <a href="/" class="btn btn-primary"><h2>Back to Home</h2></a>
+                </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- home section ends -->
+<!-- Information section Starts -->
+<section class="information" id="information">
+    <div class="container">
+        <h1 id="label-heading">You are daignosed with {{ label }}</h1>
+        <div id="information-content"></div>
+    </div>
+</section>
+<!-- Information section ends -->
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='label.js') }}"></script>
+
+<script type="text/javascript" src="{{ url_for('static', filename='information.json') }}"></script>
+<div class="footer">
+    &copy; 2023 DentALL
+   </div>
+</body>
+</html>
